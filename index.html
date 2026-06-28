@@ -1,526 +1,880 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ayurmana Ayurveda &amp; Panchakarma | Authentic Ayurveda in Dubai, Sharjah &amp; Ajman</title>
-<meta name="description" content="DHA-licensed Ayurvedic doctors across Dubai, Sharjah and Ajman. Real Kerala Ayurveda and Panchakarma for back pain, stress, digestion, skin, PCOS and postnatal care. Book a consultation today." />
-<meta property="og:title" content="Ayurmana Ayurveda &amp; Panchakarma | Authentic Ayurveda in the UAE" />
-<meta property="og:description" content="Licensed Ayurvedic doctors and authentic Kerala Panchakarma across three UAE clinics. Find the root cause, not just the symptom." />
-<meta property="og:type" content="website" />
+<meta name="description" content="DHA-licensed Ayurvedic doctors and authentic Kerala Panchakarma across Dubai, Sharjah and Ajman. For back pain, stress, digestion, skin, PCOS and postnatal care. Book a consultation today.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#14532d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ayurmana Ayurveda &amp; Panchakarma | Authentic Ayurveda in the UAE">
+<meta property="og:description" content="Licensed Ayurvedic doctors and authentic Kerala Panchakarma across three UAE clinics. Find the root cause, not just the symptom.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1200&auto=format&fit=crop">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2314532d'/%3E%3Ctext x='50' y='66' font-family='Georgia,serif' font-size='52' font-weight='bold' fill='%23e2c989' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --green:#1f5135;        /* deep herbal green */
-    --green-dark:#143524;
-    --green-soft:#2f6b48;
-    --gold:#c79a45;         /* warm turmeric gold */
-    --gold-light:#e2c989;
-    --cream:#f7f3ea;        /* warm cream */
-    --sand:#efe7d6;
-    --ink:#22271f;          /* near-black warm */
-    --muted:#5d6358;
-    --white:#ffffff;
-    --radius:16px;
-    --shadow:0 18px 50px rgba(20,53,36,.12);
-    --maxw:1180px;
-    --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
-    --sans:"Jost", "Helvetica Neue", Arial, sans-serif;
+    --ink:#14532d; --ink2:#1f6b3d; --paper:#f8f5ec; --sand:#efe8d8; --sand2:#e6dcc6;
+    --card:#ffffff; --accent:#bf972f; --accent2:#a07d24; --gold:#e6c987;
+    --good:#2f7a52;
+    --line:#e7dec9; --muted:#6a6e5f; --muted2:#8a8d7c;
+    --sh1:0 1px 2px rgba(20,53,36,.05),0 4px 12px rgba(20,53,36,.07);
+    --sh2:0 4px 10px rgba(20,53,36,.06),0 18px 44px rgba(20,53,36,.14);
+    --sh3:0 8px 20px rgba(20,53,36,.12),0 40px 90px rgba(20,53,36,.24);
+    --ease:cubic-bezier(.2,.7,.2,1);
+    --r-sm:10px; --r-md:16px; --r-lg:22px;
   }
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap');
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.65;font-weight:300;-webkit-font-smoothing:antialiased}
-  h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;color:var(--green-dark)}
-  h1{font-size:clamp(2.4rem,5.2vw,4rem)}
-  h2{font-size:clamp(1.9rem,3.8vw,2.9rem)}
-  h3{font-size:clamp(1.3rem,2.2vw,1.7rem)}
-  p{margin-bottom:1rem;color:var(--muted)}
-  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--ink);color:#fff}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:#2c3026;background:var(--paper);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:'Fraunces','Georgia',serif;font-weight:600;line-height:1.1;color:var(--ink);letter-spacing:-.016em;font-optical-sizing:auto;text-wrap:balance}
+  h1{font-size:clamp(2.6rem,5.8vw,4.7rem);letter-spacing:-.026em;line-height:1.05}
+  h2{font-size:clamp(1.95rem,3.7vw,3rem);letter-spacing:-.02em;line-height:1.08}
+  h3{font-size:1.3rem}
+  p{margin-bottom:1rem;text-wrap:pretty}
+  a{text-decoration:none;color:inherit}
   img{max-width:100%;display:block}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
-  .eyebrow{font-family:var(--sans);font-weight:500;letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:var(--gold);margin-bottom:14px;display:inline-block}
-  .btn{display:inline-block;background:var(--gold);color:#3a2c08;font-family:var(--sans);font-weight:600;letter-spacing:.02em;padding:15px 30px;border-radius:50px;transition:.25s;border:none;cursor:pointer;font-size:.98rem}
-  .btn:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 10px 26px rgba(199,154,69,.35)}
-  .btn-ghost{background:transparent;border:1.5px solid rgba(255,255,255,.5);color:#fff}
-  .btn-ghost:hover{background:rgba(255,255,255,.12);box-shadow:none}
-  .btn-green{background:var(--green);color:#fff}
-  .btn-green:hover{background:var(--green-soft);box-shadow:0 10px 26px rgba(31,81,53,.3)}
-  section{padding:84px 0}
-  .center{text-align:center}
-  .lede{font-size:1.12rem;max-width:680px;margin:0 auto 8px}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+  section{padding:94px 0}
+  .sprite{position:absolute;width:0;height:0;overflow:hidden}
+  .ic{width:1em;height:1em;display:inline-block;vertical-align:-.13em;fill:currentColor;flex:none}
+  .ic-fill{fill:currentColor;stroke:none}
+  .ic-line{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .leaf{color:var(--good)}
 
-  /* NAV */
-  header{position:sticky;top:0;z-index:50;background:rgba(247,243,234,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(31,81,53,.1)}
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;max-width:var(--maxw);margin:0 auto}
-  .brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--green-dark)}
-  .brand .mark{width:38px;height:38px;border-radius:50%;background:var(--green);display:grid;place-items:center;color:var(--gold-light);font-size:1.2rem}
-  .brand small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-top:-3px}
-  .nav-links{display:flex;align-items:center;gap:28px}
-  .nav-links a{font-size:.92rem;font-weight:400;color:var(--ink);transition:.2s}
-  .nav-links a:hover{color:var(--gold)}
-  .nav-cta{display:flex;align-items:center;gap:14px}
-  .nav-tel{font-size:.9rem;color:var(--green);font-weight:500}
-  .burger{display:none;background:none;border:none;font-size:1.6rem;color:var(--green-dark);cursor:pointer}
-  @media(max-width:920px){
-    .nav-links{position:fixed;inset:64px 0 auto 0;flex-direction:column;background:var(--cream);padding:22px;gap:18px;border-bottom:1px solid rgba(31,81,53,.12);transform:translateY(-120%);transition:.3s;align-items:flex-start}
-    .nav-links.open{transform:translateY(0)}
-    .burger{display:block}
-    .nav-tel{display:none}
-  }
+  .kicker{display:inline-flex;align-items:center;gap:11px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;font-size:.74rem;color:var(--accent);margin-bottom:18px}
+  .kicker::before{content:"";width:26px;height:1.5px;background:var(--accent);display:inline-block}
+  .kicker.cen{justify-content:center}
+  .lead{font-size:1.16rem;color:var(--muted);max-width:60ch;line-height:1.7}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#cda53b,var(--accent));color:#fff;font-weight:600;font-size:1rem;padding:15px 30px;border-radius:var(--r-sm);border:none;cursor:pointer;transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .2s;box-shadow:0 1px 2px rgba(90,68,10,.2),0 12px 26px rgba(191,151,47,.3)}
+  .btn:hover{background:linear-gradient(180deg,var(--accent),var(--accent2));transform:translateY(-2px);box-shadow:0 2px 4px rgba(90,68,10,.24),0 18px 38px rgba(191,151,47,.4)}
+  .btn:active{transform:translateY(0)}
+  .btn .ic{font-size:1.05rem;transition:transform .22s var(--ease)}.btn:hover .ic{transform:translateX(3px)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink);box-shadow:none}
+  .btn-ghost:hover{background:var(--ink);color:#fff;box-shadow:none}
+  .btn-on-dark{background:#fff;color:var(--ink);box-shadow:none}
+  .btn-on-dark:hover{background:var(--sand)}
+  .btn-outline-light{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55);box-shadow:none}
+  .btn-outline-light:hover{background:rgba(255,255,255,.14)}
+  .btn-wa{background:#1f9d55}.btn-wa:hover{background:#188047}
+  .pill{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:40px;padding:8px 16px;font-size:.85rem;font-weight:600;color:var(--ink2);box-shadow:var(--sh1)}
+  .shead{max-width:62ch}
+  .shead.cen{margin:0 auto;text-align:center}
+  h2 em,.fr-em{font-style:italic;color:var(--accent);font-weight:500}
 
-  /* HERO */
-  .hero{position:relative;background:
-      linear-gradient(120deg, rgba(20,53,36,.92) 0%, rgba(31,81,53,.82) 55%, rgba(20,53,36,.7) 100%),
-      url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1600&auto=format&fit=crop') center/cover;
-    color:#fff;padding:108px 0 96px}
-  .hero h1{color:#fff;max-width:14ch}
-  .hero p{color:rgba(255,255,255,.86);font-size:1.18rem;max-width:560px;margin:20px 0 30px}
-  .hero .eyebrow{color:var(--gold-light)}
-  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
-  .hero-trust{display:flex;gap:26px;flex-wrap:wrap;margin-top:42px;padding-top:26px;border-top:1px solid rgba(255,255,255,.18)}
-  .hero-trust div{font-size:.86rem;color:rgba(255,255,255,.82)}
-  .hero-trust strong{display:block;font-family:var(--serif);font-size:1.5rem;color:var(--gold-light);font-weight:600}
+  /* Announcement */
+  .anno{background:var(--ink);color:#eaf3ec;font-size:.82rem;text-align:center;padding:9px 16px;letter-spacing:.02em;display:flex;align-items:center;justify-content:center;gap:8px}
+  .anno b{color:#fff}
+  .anno .gold{color:var(--gold)}
 
-  /* TRUST BAR */
-  .trustbar{background:var(--green-dark);color:#fff;padding:18px 0}
-  .trustbar .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 40px;align-items:center}
-  .trustbar span{font-size:.86rem;letter-spacing:.04em;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:9px}
-  .trustbar span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+  /* Nav */
+  nav.bar{position:sticky;top:0;z-index:80;background:rgba(248,245,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:box-shadow .25s}
+  nav.bar.stuck{box-shadow:0 2px 18px rgba(20,53,36,.08)}
+  .nav-inner{display:flex;align-items:center;gap:18px;height:74px}
+  .brand{display:flex;align-items:center;gap:12px;flex:none}
+  .brand .mk{width:42px;height:42px;border-radius:50%;background:var(--ink);display:grid;place-items:center;color:var(--gold);flex:none}
+  .brand .mk .ic{font-size:1.3rem}
+  .brand .nm{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:600;color:var(--ink);line-height:1}
+  .brand .nm small{display:block;font-family:'Inter',sans-serif;font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-top:3px}
+  .nav-links{display:flex;align-items:center;gap:22px;font-weight:600;font-size:.92rem;color:var(--ink);margin-left:auto}
+  .nav-links a{position:relative}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--accent);transition:width .22s}
+  .nav-links a:hover{color:var(--accent)}.nav-links a:hover::after{width:100%}
+  .nav-right{display:flex;align-items:center;gap:10px;margin-left:8px}
+  .clinic-btn{display:inline-flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:8px 13px;font-weight:600;font-size:.88rem;cursor:pointer;transition:.2s}
+  .clinic-btn:hover{border-color:var(--accent)}
+  .clinic-btn .lbl{font-size:.58rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);display:block;line-height:1;margin-bottom:2px}
+  .clinic-btn .val{display:flex;align-items:center;gap:6px;line-height:1}
+  .clinic-btn .val .ic{font-size:.8rem}
+  .menu-btn{display:none;background:transparent;border:none;cursor:pointer;color:var(--ink);font-size:1.5rem;padding:6px}
+  .mobile-menu{position:fixed;inset:0;z-index:120;background:var(--paper);transform:translateX(100%);transition:transform .3s;display:flex;flex-direction:column;padding:24px 30px;overflow:auto}
+  .mobile-menu.open{transform:none}
+  .mobile-menu .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+  .mobile-menu a{font-family:'Fraunces',serif;font-size:1.45rem;padding:13px 0;border-bottom:1px solid var(--line);color:var(--ink)}
+  .mobile-menu .close{background:none;border:none;font-size:2rem;cursor:pointer;color:var(--ink)}
+  @media(max-width:1080px){.nav-links{display:none}.menu-btn{display:block}}
+  @media(max-width:560px){.clinic-btn .lbl{display:none}.brand .nm{font-size:1.3rem}}
 
-  /* PROBLEM */
-  .prob-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:42px}
-  .prob{background:var(--white);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);border:1px solid rgba(31,81,53,.06)}
-  .prob .ic{font-size:1.6rem;margin-bottom:10px}
-  .prob h3{font-size:1.15rem;margin-bottom:6px}
-  .prob p{font-size:.95rem;margin:0}
+  /* Hero */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+  .hero-slides{position:absolute;inset:0}
+  .hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:heroFade 24s infinite}
+  .hero-slide.s1{background-image:url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1600&auto=format&fit=crop');animation-delay:0s}
+  .hero-slide.s2{background-image:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1600&auto=format&fit=crop');animation-delay:8s}
+  .hero-slide.s3{background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1600&auto=format&fit=crop');animation-delay:16s}
+  @keyframes heroFade{0%{opacity:0;transform:scale(1.07)}3%{opacity:1}29%{opacity:1;transform:scale(1)}34%{opacity:0}100%{opacity:0}}
+  @keyframes heroUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  .hero-scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,32,20,.92) 0%,rgba(12,45,28,.74) 44%,rgba(12,45,28,.42) 74%,rgba(10,38,24,.64) 100%)}
+  .hero-scrim::after{content:"";position:absolute;inset:0;background:radial-gradient(125% 85% at 16% 32%,transparent 42%,rgba(5,22,13,.5) 100%)}
+  .hero-scrim2{position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,32,20,.85) 0%,transparent 40%)}
+  .hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:62px;padding-top:54px}
+  .hero .est-tag{animation:heroUp .7s .1s both;display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.4);border-radius:40px;padding:7px 16px;font-size:.8rem;font-weight:600;letter-spacing:.03em;margin-bottom:22px;backdrop-filter:blur(4px);background:rgba(255,255,255,.08)}
+  .hero h1{color:#fff;max-width:15ch;text-shadow:0 2px 30px rgba(0,0,0,.3);animation:heroUp .8s .25s both}
+  .hero-sub{font-size:1.2rem;color:#eaf2ec;max-width:44ch;margin:20px 0 30px;line-height:1.6;animation:heroUp .8s .4s both}
+  .hero-sub b{color:#fff}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;animation:heroUp .8s .55s both}
+  .hero-strip{display:flex;flex-wrap:wrap;gap:14px 34px;margin-top:42px;padding-top:26px;border-top:1px solid rgba(255,255,255,.18);animation:heroUp .8s .7s both}
+  .hero-strip .hs{display:flex;align-items:center;gap:11px;font-size:.92rem;color:#d8e4da}
+  .hero-strip .hs b{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:600;color:#fff;line-height:1}
+  .hero-strip .hs .ic{color:var(--gold);font-size:1.3rem}
+  .scrolldown{position:absolute;right:34px;bottom:30px;z-index:2;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#cfe0d3;writing-mode:vertical-rl;display:flex;align-items:center;gap:10px;opacity:.8}
+  .scrolldown::after{content:"";width:1px;height:40px;background:rgba(255,255,255,.5);animation:drop 1.8s infinite}
+  @keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+  @media(max-width:760px){.hero{min-height:90vh}.hero-sub{font-size:1.06rem}.scrolldown{display:none}}
 
-  /* SECTION HEAD */
-  .shead{max-width:640px;margin:0 auto 8px}
+  /* Service strip */
+  .svc{background:linear-gradient(180deg,#fff,var(--paper));border-bottom:1px solid var(--line)}
+  .svc .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:30px}
+  .svc .it{display:flex;align-items:center;gap:16px;padding:6px 26px;position:relative}
+  .svc .it+.it::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:1px;background:var(--line)}
+  .svc .it .ic-box{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex:none;background:linear-gradient(150deg,#ffffff,#eef3ea);border:1px solid #e6eddf;box-shadow:0 10px 20px rgba(20,53,36,.1),inset 0 1px 0 #fff}
+  .svc .it .ic-box.g{color:var(--ink)}.svc .it .ic-box.a{color:var(--accent)}
+  .svc .it b{display:block;font-size:1.02rem;color:var(--ink);margin-bottom:2px}
+  .svc .it span{font-size:.83rem;color:var(--muted)}
+  @media(max-width:860px){.svc .wrap{grid-template-columns:1fr 1fr;gap:20px 0;padding:24px}.svc .it{padding:8px 18px}.svc .it:nth-child(odd)::before{display:none}}
+  @media(max-width:480px){.svc .wrap{grid-template-columns:1fr;gap:16px}.svc .it+.it::before{display:none}}
 
-  /* TREATMENTS */
-  .treat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:46px}
-  .tcard{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.3s;border:1px solid rgba(31,81,53,.06)}
-  .tcard:hover{transform:translateY(-6px)}
-  .tcard .ph{height:120px;background:linear-gradient(135deg,var(--green),var(--green-soft));display:grid;place-items:center;color:var(--gold-light);font-size:2.2rem}
-  .tcard .body{padding:22px}
-  .tcard h3{font-size:1.25rem;margin-bottom:6px}
-  .tcard p{font-size:.92rem;margin:0}
-  .tcard .tag{display:inline-block;margin-top:12px;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  /* Lineage strip */
+  .lineage{background:var(--ink);color:#bcd2c2;padding:22px 0}
+  .lineage .wrap{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px 36px}
+  .lineage span{font-family:'Fraunces',serif;font-size:1.1rem;letter-spacing:.03em;opacity:.85;white-space:nowrap;display:inline-flex;align-items:center;gap:9px}
+  .lineage .sep{opacity:.3}
+  @media(max-width:640px){.lineage span{font-size:.95rem}}
 
-  /* APPROACH STEPS */
-  .approach{background:var(--sand)}
-  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:46px}
-  .step{position:relative;padding:32px 24px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow)}
-  .step .num{font-family:var(--serif);font-size:2.6rem;color:var(--gold);font-weight:700;line-height:1}
-  .step h3{margin:10px 0 8px;font-size:1.25rem}
-  .step p{font-size:.95rem;margin:0}
+  /* Problem */
+  .prob-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--sh1);transition:.2s}
+  .pcard:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
+  .pcard .ic-box{width:52px;height:52px;border-radius:14px;background:var(--paper);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px;border:1px solid var(--line);color:var(--ink)}
+  .pcard h3{margin-bottom:7px;font-size:1.18rem}
+  .pcard p{margin:0;color:var(--muted);font-size:.95rem}
+  @media(max-width:900px){.prob-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.prob-grid{grid-template-columns:1fr}}
 
-  /* PACKAGES */
-  .pkg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:46px}
-  .pkg{background:var(--white);border-radius:var(--radius);padding:30px 26px;box-shadow:var(--shadow);border-top:4px solid var(--gold);transition:.3s}
-  .pkg:hover{transform:translateY(-5px)}
-  .pkg h3{font-size:1.3rem;margin-bottom:8px}
-  .pkg ul{list-style:none;margin:14px 0 0}
-  .pkg li{font-size:.92rem;color:var(--muted);padding:6px 0 6px 24px;position:relative}
-  .pkg li::before{content:"\2713";position:absolute;left:0;color:var(--green-soft);font-weight:700}
+  /* Treatments bento */
+  .treat-grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:220px;gap:16px;margin-top:42px}
+  .tile{position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--sh1);display:block;background:var(--ink)}
+  .tile img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);opacity:.92}
+  .tile:hover img{transform:scale(1.07)}
+  .tile .ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,32,20,.82) 0%,rgba(8,32,20,.12) 58%)}
+  .tile .lbl{position:absolute;left:22px;bottom:18px;right:20px;color:#fff;z-index:2}
+  .tile .lbl h3{color:#fff;margin-bottom:3px;font-size:1.3rem;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+  .tile .lbl .sub{font-size:.86rem;opacity:.92;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+  .tile .tagchip{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.16);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.32);color:#fff;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:30px;z-index:2}
+  .tile.big{grid-column:span 3;grid-row:span 2}
+  .tile.wide{grid-column:span 3}
+  .tile.sm{grid-column:span 2}
+  @media(max-width:900px){.treat-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px}.tile.big,.tile.wide,.tile.sm{grid-column:span 1;grid-row:span 1}.tile.big{grid-column:span 2}}
 
-  /* DOCTORS */
-  .docs{background:var(--green-dark);color:#fff}
-  .docs h2,.docs h3{color:#fff}
-  .docs .eyebrow{color:var(--gold-light)}
-  .docs .lede{color:rgba(255,255,255,.8)}
-  .doc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:46px}
-  .doc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px}
-  .doc .av{width:60px;height:60px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:var(--green-dark);font-family:var(--serif);font-size:1.5rem;font-weight:700;margin-bottom:16px}
-  .doc h3{font-size:1.2rem;margin-bottom:4px}
-  .doc .cred{font-size:.82rem;color:var(--gold-light);margin-bottom:10px;font-weight:500}
-  .doc p{font-size:.9rem;color:rgba(255,255,255,.78);margin:0}
+  /* Approach (how it works) */
+  .approach{background:linear-gradient(180deg,var(--paper),var(--sand) 130%)}
+  .ap-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
+  .ap-panel{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--sh2);overflow:hidden}
+  .ap-panel .top{position:relative;height:220px}
+  .ap-panel .top img{width:100%;height:100%;object-fit:cover}
+  .ap-panel .top .ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,38,24,.78),transparent 60%)}
+  .ap-panel .top .badge{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.92);border-radius:30px;padding:6px 13px;font-size:.78rem;font-weight:700;color:var(--good);display:flex;align-items:center;gap:7px}
+  .ap-panel .top .nm{position:absolute;left:22px;bottom:16px;color:#fff}
+  .ap-panel .top .nm .city{font-family:'Fraunces',serif;font-size:1.7rem;font-weight:600;line-height:1}
+  .ap-panel .top .nm .prov{font-size:.85rem;opacity:.88;margin-top:3px}
+  .ap-panel .body{padding:8px 22px 18px}
+  .ap-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .ap-row:last-child{border-bottom:none}
+  .ap-row .k{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+  .ap-row .v{font-weight:600;font-size:.98rem}
+  .ap-foot{padding:18px 22px;background:var(--sand);display:flex;gap:10px}
+  .ap-foot .btn{flex:1;justify-content:center;padding:13px}
+  .dotpulse{width:9px;height:9px;border-radius:50%;background:var(--good);box-shadow:0 0 0 0 rgba(47,122,82,.5);animation:pulse 2s infinite;flex:none}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,122,82,.5)}70%{box-shadow:0 0 0 9px rgba(47,122,82,0)}100%{box-shadow:0 0 0 0 rgba(47,122,82,0)}}
+  .steps{margin-top:26px;display:grid;gap:2px}
+  .step{display:flex;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+  .step .n{flex:none;width:36px;height:36px;border-radius:10px;background:var(--ink);color:var(--gold);font-family:'Fraunces',serif;font-weight:700;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.1rem;margin-bottom:2px}
+  .step p{margin:0;color:var(--muted);font-size:.95rem}
+  @media(max-width:860px){.ap-grid{grid-template-columns:1fr;gap:34px}}
 
-  /* CONDITIONS */
-  .cond-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px;justify-content:center}
-  .cond-list span{background:var(--white);border:1px solid rgba(31,81,53,.12);border-radius:50px;padding:10px 22px;font-size:.92rem;color:var(--green-dark);box-shadow:0 4px 14px rgba(20,53,36,.05)}
+  /* Packages */
+  .pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:42px}
+  .pkg{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--sh1);transition:.2s;border-top:4px solid var(--accent)}
+  .pkg:hover{transform:translateY(-5px);box-shadow:var(--sh2)}
+  .pkg .ic-box{width:48px;height:48px;border-radius:12px;background:var(--paper);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:15px;border:1px solid var(--line);color:var(--accent)}
+  .pkg h3{margin-bottom:6px}
+  .pkg>p{color:var(--muted);font-size:.95rem;margin-bottom:14px}
+  .pkg ul{list-style:none;margin:0}
+  .pkg li{font-size:.92rem;color:var(--muted);padding:7px 0 7px 26px;position:relative}
+  .pkg li .ic{position:absolute;left:0;top:9px;color:var(--good);font-size:.95rem}
+  @media(max-width:860px){.pkg-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.pkg-grid{grid-template-columns:1fr}}
 
-  /* REVIEWS */
+  /* Doctors */
+  .docs{background:var(--ink);color:#e3efe6}
+  .docs h2,.docs h3{color:#fff}.docs h2 em{color:var(--gold)}
+  .docs .kicker{color:var(--gold)}.docs .kicker::before{background:var(--gold)}
+  .docs .lead{color:#bcd2c2}
+  .doc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:42px}
+  .doc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:28px;transition:.2s}
+  .doc:hover{background:rgba(255,255,255,.08);transform:translateY(-4px)}
+  .doc .av{width:56px;height:56px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-family:'Fraunces',serif;font-size:1.4rem;font-weight:700;margin-bottom:16px}
+  .doc h3{font-size:1.18rem;margin-bottom:5px}
+  .doc .cred{font-size:.82rem;color:var(--gold);margin-bottom:10px;font-weight:600;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+  .doc p{font-size:.9rem;color:#bcd2c2;margin:0}
+  @media(max-width:860px){.doc-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.doc-grid{grid-template-columns:1fr}}
+
+  /* Conditions */
+  .cond-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px;justify-content:center}
+  .cond-list span{background:var(--card);border:1px solid var(--line);border-radius:50px;padding:10px 22px;font-size:.94rem;color:var(--ink);box-shadow:var(--sh1);display:inline-flex;align-items:center;gap:9px}
+  .cond-list span .ic{color:var(--accent);font-size:.95rem}
+
+  /* Reviews */
   .reviews{background:var(--sand)}
-  .rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:44px}
-  .rev{background:var(--white);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
-  .rev .stars{color:var(--gold);font-size:1.1rem;letter-spacing:3px;margin-bottom:12px}
-  .rev p{font-style:italic;color:var(--ink);margin-bottom:14px;font-size:1rem}
-  .rev .who{font-weight:600;color:var(--green-dark);font-size:.92rem;font-style:normal}
-  .rev-note{text-align:center;margin-top:26px;font-size:.86rem;color:var(--muted)}
+  .rev-top{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:8px}
+  .rev-score{display:flex;align-items:center;gap:14px}
+  .rev-score .num{font-family:'Fraunces',serif;font-size:2.6rem;font-weight:700;color:var(--ink);line-height:1}
+  .stars{display:inline-flex;gap:3px;color:#e0a92e}
+  .stars .ic{font-size:1.05rem}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+  .rev-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--sh1);display:flex;flex-direction:column}
+  .rev-card .stars{margin-bottom:12px}
+  .rev-card p{font-size:1.02rem;color:#3a3f33;flex:1;margin-bottom:16px}
+  .rev-card .who{display:flex;align-items:center;gap:12px}
+  .rev-card .av{width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Fraunces',serif}
+  .rev-card .who b{display:block;font-size:.95rem;color:var(--ink)}
+  .rev-card .who span{font-size:.8rem;color:var(--muted)}
+  .note-soft{color:var(--muted);font-size:.82rem;margin-top:16px;text-align:center}
+  @media(max-width:860px){.rev-grid{grid-template-columns:1fr}}
 
-  /* LEAD MAGNET */
-  .magnet{background:linear-gradient(120deg,var(--green),var(--green-soft));color:#fff;border-radius:24px;padding:54px 40px;text-align:center;box-shadow:var(--shadow)}
-  .magnet h2{color:#fff}
-  .magnet p{color:rgba(255,255,255,.85);max-width:520px;margin:14px auto 26px}
-  .mform{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
-  .mform input{flex:1;min-width:200px;padding:15px 20px;border-radius:50px;border:none;font-family:var(--sans);font-size:.95rem}
-  .mform .btn{flex-shrink:0}
-  .mform-note{font-size:.78rem;color:rgba(255,255,255,.7);margin-top:14px}
+  /* Philosophy / story */
+  .story .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:center}
+  .story-figure{position:relative}
+  .story-figure img{width:100%;border-radius:20px;box-shadow:var(--sh2);aspect-ratio:4/5;object-fit:cover}
+  .story-figure .est{position:absolute;right:-26px;bottom:-26px;background:var(--ink);color:var(--gold);border-radius:18px;padding:22px 26px;text-align:center;box-shadow:var(--sh2)}
+  .story-figure .est .yr{font-family:'Fraunces',serif;font-size:2.4rem;font-weight:700;line-height:1;color:#fff}
+  .story-figure .est .sub{font-size:.64rem;text-transform:uppercase;letter-spacing:.16em;margin-top:5px}
+  .story blockquote{border-left:3px solid var(--accent);padding-left:20px;margin:22px 0;font-family:'Fraunces',serif;font-size:1.32rem;font-style:italic;color:var(--ink2);line-height:1.4}
+  @media(max-width:860px){.story .wrap{grid-template-columns:1fr;gap:48px}.story-figure .est{right:18px}}
 
-  /* LOCATIONS */
-  .loc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:46px}
-  .loc{background:var(--white);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);border:1px solid rgba(31,81,53,.06)}
-  .loc h3{font-size:1.35rem;margin-bottom:4px}
-  .loc .city{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;display:block}
-  .loc p{font-size:.92rem;margin-bottom:10px}
-  .loc a.row{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--green);padding:5px 0;font-weight:400}
-  .loc a.row:hover{color:var(--gold)}
-  .loc .ic{width:18px;text-align:center}
+  /* Book / form */
+  .book{background:linear-gradient(180deg,var(--paper),var(--sand))}
+  .book .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+  .book ul{list-style:none;margin:22px 0 0}
+  .book li{padding:9px 0 9px 34px;position:relative;color:#3a3f33;font-weight:500}
+  .book li .ic{position:absolute;left:0;top:8px;color:var(--good);font-size:1.2rem}
+  .formcard{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:34px;box-shadow:var(--sh2)}
+  .formcard h3{font-size:1.5rem;margin-bottom:6px}
+  .formcard .fsub{color:var(--muted);font-size:.92rem;margin-bottom:20px}
+  .field{margin-bottom:15px}
+  .field label{display:block;font-weight:600;font-size:.82rem;margin-bottom:6px;color:var(--ink2)}
+  .field input,.field select{width:100%;border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:13px 15px;font-family:inherit;font-size:.96rem;color:var(--ink)}
+  .field input:focus,.field select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(191,151,47,.16)}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .form-note{font-size:.78rem;color:var(--muted2);margin-top:12px}
+  .form-ok{display:none;background:#eaf5ee;border:1px solid #bfe0cb;color:#1c6b40;border-radius:12px;padding:16px;font-size:.92rem;font-weight:500;margin-top:6px}
+  @media(max-width:860px){.book .wrap{grid-template-columns:1fr;gap:36px}}
+  @media(max-width:520px){.field-row{grid-template-columns:1fr}}
+
+  /* Locations */
+  .loc{background:var(--ink);color:#e3efe6}
+  .loc h2,.loc h3{color:#fff}.loc h2 em{color:var(--gold)}
+  .loc .kicker{color:var(--gold)}.loc .kicker::before{background:var(--gold)}
+  .loc .lead{color:#bcd2c2}
+  .loc-tabs{display:flex;gap:10px;justify-content:center;margin-top:34px;flex-wrap:wrap}
+  .loc-tab{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:#fff;border-radius:40px;padding:10px 22px;font-weight:600;font-size:.92rem;cursor:pointer;transition:.18s}
+  .loc-tab:hover{border-color:var(--gold)}
+  .loc-tab.on{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+  .loc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+  .lcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:28px;transition:.25s}
+  .lcard.on{background:rgba(230,201,135,.1);border-color:var(--gold)}
+  .lcard .city{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px;display:block}
+  .lcard h3{font-size:1.35rem;margin-bottom:8px}
+  .lcard .addr{font-size:.92rem;color:#bcd2c2;margin-bottom:16px;min-height:42px}
+  .lcard a.row{display:flex;align-items:center;gap:11px;font-size:.92rem;color:#e3efe6;padding:6px 0}
+  .lcard a.row:hover{color:var(--gold)}
+  .lcard a.row .ic{color:var(--gold);font-size:1rem}
+  @media(max-width:860px){.loc-grid{grid-template-columns:1fr}}
 
   /* FAQ */
-  .faq{max-width:780px;margin:46px auto 0}
-  .qa{background:var(--white);border-radius:12px;margin-bottom:12px;box-shadow:0 6px 18px rgba(20,53,36,.05);overflow:hidden;border:1px solid rgba(31,81,53,.06)}
-  .qa button{width:100%;text-align:left;background:none;border:none;padding:20px 24px;font-family:var(--serif);font-size:1.12rem;font-weight:600;color:var(--green-dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px}
-  .qa .ans{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 24px}
-  .qa .ans p{font-size:.95rem;padding-bottom:20px;margin:0}
-  .qa.open .ans{max-height:340px}
-  .qa .pm{transition:.3s;color:var(--gold);font-size:1.4rem}
-  .qa.open .pm{transform:rotate(45deg)}
+  .faq{max-width:820px;margin:38px auto 0}
+  .faq-item{border-bottom:1px solid var(--line)}
+  .faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 0;font-family:'Fraunces',serif;font-size:1.18rem;font-weight:600;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .faq-q .ic{color:var(--accent);transition:transform .25s;flex:none}
+  .faq-item.open .faq-q .ic{transform:rotate(45deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  .faq-a p{padding:0 0 20px;color:var(--muted);margin:0}
 
-  /* FINAL CTA */
-  .final{background:
-      linear-gradient(rgba(20,53,36,.9),rgba(20,53,36,.9)),
-      url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1600&auto=format&fit=crop') center/cover fixed;
-    color:#fff;text-align:center}
-  .final h2{color:#fff;max-width:16ch;margin:0 auto}
-  .final p{color:rgba(255,255,255,.85);max-width:540px;margin:16px auto 28px}
+  /* Final */
+  .final{position:relative;color:#fff;text-align:center;overflow:hidden}
+  .final-img{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1600&auto=format&fit=crop');background-size:cover;background-position:center 35%}
+  .final-scrim{position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,32,20,.93),rgba(10,38,24,.78))}
+  .final .wrap{position:relative;z-index:2;padding:30px}
+  .final h2{color:#fff;max-width:18ch;margin:0 auto}
+  .final p{color:#dbeadf;max-width:52ch;margin:16px auto 30px;font-size:1.1rem}
 
-  /* FOOTER */
-  footer{background:var(--ink);color:rgba(255,255,255,.65);padding:60px 0 28px;font-size:.9rem}
-  .f-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:34px}
-  .f-grid h4{color:#fff;font-size:1rem;margin-bottom:14px;font-family:var(--sans);font-weight:600;letter-spacing:.04em}
-  .f-grid a{display:block;color:rgba(255,255,255,.6);padding:4px 0}
-  .f-grid a:hover{color:var(--gold-light)}
-  .f-brand{font-family:var(--serif);font-size:1.5rem;color:#fff;margin-bottom:10px}
-  .f-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem}
-  .disclaimer{max-width:var(--maxw);margin:18px auto 0;padding:0 22px;font-size:.74rem;color:rgba(255,255,255,.4);line-height:1.6}
-  @media(max-width:760px){.f-grid{grid-template-columns:1fr 1fr}}
-  @media(max-width:480px){.f-grid{grid-template-columns:1fr}}
+  /* Newsletter */
+  .newsletter{background:#0f3d23;color:#fff}
+  .newsletter .wrap{padding:50px 30px}
+  .nl-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+  .nl-inner h3{color:#fff;font-size:1.6rem}
+  .nl-inner p{color:#bcd2c2;margin:6px 0 0;max-width:48ch}
+  .nl-form{display:flex;gap:10px;flex:1;min-width:300px;max-width:470px}
+  .nl-form input{flex:1;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);border-radius:10px;padding:14px 16px;color:#fff;font-family:inherit;font-size:.95rem}
+  .nl-form input::placeholder{color:#a7bdac}
+  .nl-form input:focus{outline:none;border-color:#fff}
+  @media(max-width:640px){.nl-inner{flex-direction:column;align-items:flex-start}.nl-form{width:100%;max-width:none}}
 
-  /* WHATSAPP FLOAT */
-  .wa{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;box-shadow:0 8px 24px rgba(37,211,102,.45);transition:.2s}
+  /* Footer */
+  footer{background:#0b2c1a;color:#a7bdac;padding:62px 0 26px;font-size:.92rem}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px}
+  .foot-brand .fb{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+  .foot-brand .fb .mk{width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--ink)}
+  .foot-brand .fb .nm{font-family:'Fraunces',serif;font-size:1.4rem;color:#fff}
+  footer h4{color:#fff;font-family:'Inter';font-size:.74rem;text-transform:uppercase;letter-spacing:.15em;margin-bottom:16px}
+  footer a{display:block;padding:5px 0;color:#a7bdac;transition:.15s}
+  footer a:hover{color:#fff;padding-left:3px}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.82rem;color:#6f8576}
+  .disclaimer{max-width:1200px;margin:18px auto 0;padding:0 30px;font-size:.74rem;color:#5f7565;line-height:1.6}
+  @media(max-width:760px){.foot-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.foot-grid{grid-template-columns:1fr}}
+
+  /* WhatsApp float */
+  .wa{position:fixed;right:18px;bottom:18px;z-index:90;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px rgba(37,211,102,.45);transition:.2s}
+  .wa .ic{font-size:1.7rem}
   .wa:hover{transform:scale(1.08)}
 
-  /* reveal */
-  .reveal{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.3,1)}
-  .reveal.in{opacity:1;transform:none}
+  /* Modal */
+  .modal{position:fixed;inset:0;z-index:200;background:rgba(8,32,20,.6);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;padding:20px}
+  .modal.open{display:flex}
+  .modal-card{background:var(--paper);border-radius:20px;max-width:560px;width:100%;max-height:84vh;overflow:auto;padding:32px;box-shadow:var(--sh3)}
+  .modal-card h3{margin-bottom:4px;font-size:1.5rem}
+  .modal-card .sub{color:var(--muted);font-size:.92rem;margin-bottom:20px}
+  .ms-list{display:grid;gap:10px}
+  .ms{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid var(--line);background:#fff;border-radius:12px;padding:15px 17px;cursor:pointer;transition:.15s;text-align:left}
+  .ms:hover{border-color:var(--accent);transform:translateY(-1px)}
+  .ms .c{font-weight:600;font-size:1rem;color:var(--ink)}
+  .ms .p{font-size:.8rem;color:var(--muted)}
+  .ms .ic{color:var(--accent)}
+  .modal-x{float:right;cursor:pointer;color:var(--muted);font-size:1.7rem;line-height:1;margin-top:-6px;background:none;border:none}
+
+  /* Reveal + a11y */
+  .rv{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .rv.in{opacity:1;transform:none}
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+  .skip-link{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;border-radius:0 0 8px 0;z-index:300}
+  .skip-link:focus{left:0}
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+    .hero-slide{opacity:1}.hero-slide.s2,.hero-slide.s3{opacity:0}.rv{opacity:1;transform:none}
+  }
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[
+{"@type":"MedicalOrganization","@id":"#org","name":"Ayurmana Ayurveda & Panchakarma FZC","url":"https://www.ayurmana-uae.com/","medicalSpecialty":"Ayurvedic","slogan":"Treat the root cause, not just the symptom.","areaServed":["Dubai","Sharjah","Ajman"],"sameAs":["https://www.instagram.com/ayurmanaayurvedauae/","https://www.facebook.com/ayurmanaayurvedacenter/","https://www.tiktok.com/@ayurmanaayurvedauae"]},
+{"@type":["MedicalClinic","LocalBusiness"],"name":"Ayurmana Ayurveda - Dubai","parentOrganization":{"@id":"#org"},"telephone":"+97143300788","openingHours":"Mo-Su 09:00-21:00","address":{"@type":"PostalAddress","streetAddress":"Office 407 & 408, Lynx Business Tower, Dubai Silicon Oasis","addressLocality":"Dubai","addressCountry":"AE"}},
+{"@type":["MedicalClinic","LocalBusiness"],"name":"Ayurmana Ayurveda - Sharjah","parentOrganization":{"@id":"#org"},"telephone":"+97165505500","openingHours":"Mo-Su 09:00-21:00","address":{"@type":"PostalAddress","streetAddress":"304, Al Taneiji Building, New Muweileh","addressLocality":"Sharjah","addressCountry":"AE"}},
+{"@type":["MedicalClinic","LocalBusiness"],"name":"Ayurmana Ayurveda - Ajman","parentOrganization":{"@id":"#org"},"telephone":"+97167475001","openingHours":"Mo-Su 09:00-21:00","address":{"@type":"PostalAddress","streetAddress":"Suite 13, Al Liwara 1 Building","addressLocality":"Ajman","addressCountry":"AE"}}
+]}</script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<header>
-  <div class="nav">
-    <a href="#top" class="brand">
-      <span class="mark">&#10047;</span>
-      <span>Ayurmana<small>Ayurveda &amp; Panchakarma</small></span>
+<svg class="sprite" aria-hidden="true"><defs>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21c.5-4 2-7 5-9c-2.5.5-4.5 2-6 4c.2-4.5 3-8 8-9c3.5-.7 6-2 7-3c.5 5-.5 13-6 16c-2.7 1.5-5.7 1.4-8 1Z"/></symbol>
+<symbol id="i-drop" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2s7 7.6 7 12a7 7 0 1 1-14 0C5 9.6 12 2 12 2Z"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l1.8 5.6L19 9.4l-4.6 2.9L16 18l-4-3.3L8 18l1.6-5.7L5 9.4l5.2-1.8L12 2Z"/></symbol>
+<symbol id="i-pulse" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 12h4l2-6l4 12l2-6h6"/></symbol>
+<symbol id="i-bowl" viewBox="0 0 24 24"><path fill="currentColor" d="M3 11h18a9 9 0 0 1-18 0Zm9-9c1.5 1.5 1.5 3.5 0 5c-1.5-1.5-1.5-3.5 0-5ZM6 22h12v-1H6v1Z"/></symbol>
+<symbol id="i-lotus" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3c1.6 1.7 2.5 3.6 2.5 5.6c0 1-.3 2-.8 3c1.4-.4 2.8-1.5 4-3.2c.4 2.6-.2 4.8-1.8 6.4C16.4 19 14.4 20 12 20s-4.4-1-5.9-2.2c-1.6-1.6-2.2-3.8-1.8-6.4c1.2 1.7 2.6 2.8 4 3.2c-.5-1-.8-2-.8-3C9.5 6.6 10.4 4.7 12 3Z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l8 3v6c0 5-3.4 9-8 11C7.4 20 4 16 4 11V5l8-3Zm-1 13l5-5l-1.4-1.4L11 12.2l-1.6-1.6L8 12l3 3Z"/></symbol>
+<symbol id="i-card" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Zm0 4v6h18v-6H3Zm2 3h6v1.5H5V13Z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.3L22 9.3l-5 4.9l1.2 7L12 17.8L5.8 21.2L7 14.2l-5-4.9l7.1-1L12 2Z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm.75 5.25h-1.5V13l4.5 2.7l.75-1.23l-3.75-2.22V7.25Z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c-4.4 0-8 3.6-8 8c0 5.4 7 12 7.3 12.3c.4.4 1 .4 1.4 0C13 22 20 15.4 20 10c0-4.4-3.6-8-8-8Zm0 11a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2c1.2.4 2.5.6 3.8.6c.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1c0 1.3.2 2.6.6 3.8c.1.3 0 .7-.2 1l-2.3 2Z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4V6a2 2 0 0 1 2-2Zm3 6h10V8H7v2Zm0 3h7v-2H7v2Z"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7ZM5 9h14v11H5V9Z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12l5 5l9-11"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5A1.25 1.25 0 1 1 16 6.75A1.25 1.25 0 0 1 17.25 5.5ZM12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-1.56 19.88v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7A10 10 0 0 0 12 2Z"/></symbol>
+<symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16 2c.3 2.2 1.6 3.9 3.8 4.1v2.6c-1.4 0-2.7-.4-3.8-1.1v6.7a6.1 6.1 0 1 1-6.1-6.1c.3 0 .6 0 .9.1v2.7a3.4 3.4 0 1 0 2.4 3.3V2H16Z"/></symbol>
+</defs></svg>
+
+<div class="anno">
+  <svg class="ic leaf"><use href="#i-leaf"></use></svg>
+  <b>Authentic Kerala Ayurveda across Dubai, Sharjah &amp; Ajman.</b> <span class="gold">Insurance reimbursement support available.</span>
+</div>
+
+<nav class="bar" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#main" class="brand">
+      <span class="mk"><svg class="ic"><use href="#i-lotus"></use></svg></span>
+      <span class="nm">Ayurmana<small>Ayurveda &amp; Panchakarma</small></span>
     </a>
-    <nav class="nav-links" id="menu">
+    <div class="nav-links">
       <a href="#problem">Why Ayurveda</a>
       <a href="#treatments">Treatments</a>
       <a href="#packages">Packages</a>
       <a href="#doctors">Our Doctors</a>
       <a href="#locations">Locations</a>
-    </nav>
-    <div class="nav-cta">
-      <a href="tel:8002987" class="nav-tel">Toll-free 800-AYUR</a>
-      <a href="#book" class="btn">Book Consultation</a>
-      <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+    </div>
+    <div class="nav-right">
+      <button class="clinic-btn" id="clinicBtn">
+        <span>
+          <span class="lbl">Nearest clinic</span>
+          <span class="val"><span id="clinicBtnCity">Dubai</span> <svg class="ic"><use href="#i-chev"></use></svg></span>
+        </span>
+      </button>
+      <a href="#book" class="btn" style="padding:11px 20px">Book</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
     </div>
   </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="top">
+    <span class="brand"><span class="mk"><svg class="ic"><use href="#i-lotus"></use></svg></span><span class="nm">Ayurmana</span></span>
+    <button class="close" id="menuClose" aria-label="Close">&times;</button>
+  </div>
+  <a href="#problem">Why Ayurveda</a>
+  <a href="#treatments">Treatments</a>
+  <a href="#packages">Packages</a>
+  <a href="#doctors">Our Doctors</a>
+  <a href="#locations">Locations</a>
+  <a href="#book">Book a consultation</a>
+  <a href="tel:8002987">Call 800-AYUR</a>
+</div>
+
+<!-- Hero -->
+<header class="hero" id="main">
+  <div class="hero-slides">
+    <div class="hero-slide s1"></div>
+    <div class="hero-slide s2"></div>
+    <div class="hero-slide s3"></div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-scrim2"></div>
+  <div class="wrap">
+    <div class="est-tag"><svg class="ic" style="color:var(--gold)"><use href="#i-lotus"></use></svg> DHA-licensed doctors &middot; Authentic Kerala lineage</div>
+    <h1>Treat the root cause, <em>not just the symptom.</em></h1>
+    <p class="hero-sub">Authentic Ayurveda and Panchakarma, guided by qualified doctors. For the aches, fatigue, stress and imbalances that standard reports <b>often miss</b>.</p>
+    <div class="hero-cta">
+      <a href="#book" class="btn">Book your consultation <svg class="ic"><use href="#i-arrow"></use></svg></a>
+      <a href="https://wa.me/971569335500" class="btn btn-outline-light">Message on WhatsApp</a>
+    </div>
+    <div class="hero-strip">
+      <div class="hs"><b>3</b><span>Clinics across<br>the UAE</span></div>
+      <div class="hs"><b>7+</b><span>Qualified Ayurvedic<br>doctors</span></div>
+      <div class="hs"><svg class="ic"><use href="#i-shield"></use></svg> <span>DHA-licensed<br>practitioners</span></div>
+      <div class="hs"><svg class="ic"><use href="#i-card"></use></svg> <span>Insurance<br>support</span></div>
+    </div>
+  </div>
+  <div class="scrolldown">Scroll</div>
 </header>
 
-<!-- HERO -->
-<section class="hero" id="top">
+<!-- Service strip -->
+<div class="svc">
   <div class="wrap">
-    <span class="eyebrow">Dubai &middot; Sharjah &middot; Ajman</span>
-    <h1>Treat the root cause, not just the symptom.</h1>
-    <p>Authentic Kerala Ayurveda and Panchakarma, guided by DHA-licensed doctors. For the aches, fatigue, stress and imbalances that standard reports often miss.</p>
-    <div class="hero-cta">
-      <a href="#book" class="btn">Book Your Consultation</a>
-      <a href="https://wa.me/971569335500" class="btn btn-ghost">Message on WhatsApp</a>
-    </div>
-    <div class="hero-trust">
-      <div><strong>3</strong>Clinics across the UAE</div>
-      <div><strong>7+</strong>Qualified Ayurvedic doctors</div>
-      <div><strong>DHA</strong>Licensed practitioners</div>
-      <div><strong>Insurance</strong>Reimbursement support</div>
-    </div>
-  </div>
-</section>
-
-<div class="trustbar">
-  <div class="wrap">
-    <span>Authentic Kerala lineage</span>
-    <span>Personalised dosha assessment</span>
-    <span>Genuine herbal medicines</span>
-    <span>Insurance claim support</span>
-    <span>Open 9am to 9pm</span>
+    <div class="it"><div class="ic-box g"><svg class="ic"><use href="#i-shield"></use></svg></div><div><b>DHA-licensed doctors</b><span>Qualified, regulated care</span></div></div>
+    <div class="it"><div class="ic-box a"><svg class="ic"><use href="#i-leaf"></use></svg></div><div><b>Authentic Kerala Ayurveda</b><span>Genuine herbal medicines</span></div></div>
+    <div class="it"><div class="ic-box a"><svg class="ic"><use href="#i-card"></use></svg></div><div><b>Insurance support</b><span>Reimbursement assistance</span></div></div>
+    <div class="it"><div class="ic-box g"><svg class="ic"><use href="#i-pin"></use></svg></div><div><b>Three UAE clinics</b><span>Dubai, Sharjah &amp; Ajman</span></div></div>
   </div>
 </div>
 
-<!-- PROBLEM -->
+<!-- Lineage -->
+<div class="lineage">
+  <div class="wrap">
+    <span><svg class="ic" style="color:var(--gold)"><use href="#i-leaf"></use></svg> BAMS-qualified doctors</span>
+    <span class="sep">/</span>
+    <span>Kerala Ayurveda tradition</span>
+    <span class="sep">/</span>
+    <span>Personalised dosha assessment</span>
+    <span class="sep">/</span>
+    <span>Open daily 9am to 9pm</span>
+  </div>
+</div>
+
+<!-- Problem -->
 <section id="problem">
-  <div class="wrap center">
-    <span class="eyebrow">Sound familiar?</span>
-    <h2>When you feel off, but the tests come back "normal"</h2>
-    <p class="lede">A mild unease, a stiffness that lingers, fatigue you cannot explain. Ayurveda looks at the whole person to find what is actually out of balance, then builds a plan to bring you back.</p>
+  <div class="wrap">
+    <div class="shead cen">
+      <div class="kicker cen">Sound familiar?</div>
+      <h2>When you feel off, but the tests come back <em>"normal."</em></h2>
+      <p class="lead" style="margin:16px auto 0">A mild unease, stiffness that lingers, fatigue you cannot explain. Ayurveda looks at the whole person to find what is actually out of balance, then builds a plan to bring you back.</p>
+    </div>
     <div class="prob-grid">
-      <div class="prob reveal"><div class="ic">&#129504;</div><h3>Stress &amp; poor sleep</h3><p>A racing mind, tension you carry in your shoulders, nights that do not restore you.</p></div>
-      <div class="prob reveal"><div class="ic">&#129461;</div><h3>Back, neck &amp; joints</h3><p>Stiffness and pain that painkillers only mask, often from years of desk work or strain.</p></div>
-      <div class="prob reveal"><div class="ic">&#127859;</div><h3>Digestion &amp; weight</h3><p>Bloating, sluggish metabolism and gut issues that never seem to fully settle.</p></div>
-      <div class="prob reveal"><div class="ic">&#10024;</div><h3>Skin, hair &amp; hormones</h3><p>Recurring skin flare-ups, hair fall, PCOS and concerns linked to the inside, not just the surface.</p></div>
+      <div class="pcard rv"><div class="ic-box"><svg class="ic"><use href="#i-pulse"></use></svg></div><h3>Stress &amp; poor sleep</h3><p>A racing mind, tension you carry in your shoulders, nights that do not restore you.</p></div>
+      <div class="pcard rv"><div class="ic-box"><svg class="ic"><use href="#i-spark"></use></svg></div><h3>Back, neck &amp; joints</h3><p>Stiffness and pain that painkillers only mask, often from years of desk work or strain.</p></div>
+      <div class="pcard rv"><div class="ic-box"><svg class="ic"><use href="#i-bowl"></use></svg></div><h3>Digestion &amp; weight</h3><p>Bloating, sluggish metabolism and gut issues that never seem to fully settle.</p></div>
+      <div class="pcard rv"><div class="ic-box"><svg class="ic"><use href="#i-drop"></use></svg></div><h3>Skin, hair &amp; hormones</h3><p>Recurring flare-ups, hair fall, PCOS and concerns linked to the inside, not just the surface.</p></div>
     </div>
   </div>
 </section>
 
-<!-- TREATMENTS -->
-<section id="treatments" style="background:var(--cream)">
-  <div class="wrap center">
-    <div class="shead">
-      <span class="eyebrow">Signature therapies</span>
-      <h2>Traditional treatments, delivered the authentic way</h2>
-      <p class="lede">Every therapy is prescribed after a personal consultation. No two plans are the same.</p>
+<!-- Treatments bento -->
+<section id="treatments" style="background:var(--sand);padding-top:80px">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <div class="shead">
+        <div class="kicker">Signature therapies</div>
+        <h2>Traditional treatments, <em>done the authentic way.</em></h2>
+      </div>
+      <span class="pill"><svg class="ic" style="color:var(--accent)"><use href="#i-leaf"></use></svg> Every therapy is prescribed after a consultation</span>
     </div>
     <div class="treat-grid">
-      <div class="tcard reveal"><div class="ph">&#127796;</div><div class="body"><h3>Panchakarma</h3><p>A staged detox and rejuvenation programme to clear accumulated toxins and reset the system.</p><span class="tag">Detox &amp; Rejuvenation</span></div></div>
-      <div class="tcard reveal"><div class="ph">&#128167;</div><div class="body"><h3>Shirodhara</h3><p>A steady stream of warm herbal oil over the forehead to calm the mind and ease stress.</p><span class="tag">Stress &amp; Sleep</span></div></div>
-      <div class="tcard reveal"><div class="ph">&#129468;</div><div class="body"><h3>Kati &amp; Janu Vasti</h3><p>Warm medicated oil held over the lower back or knee to relieve targeted joint pain.</p><span class="tag">Pain Relief</span></div></div>
-      <div class="tcard reveal"><div class="ph">&#127806;</div><div class="body"><h3>Njavarakizhi</h3><p>A nourishing rice-and-herb poultice massage that strengthens muscles and tissues.</p><span class="tag">Strength &amp; Vitality</span></div></div>
-      <div class="tcard reveal"><div class="ph">&#129379;</div><div class="body"><h3>Udwarthana</h3><p>A herbal powder massage used within slimming and metabolic-balance programmes.</p><span class="tag">Weight &amp; Metabolism</span></div></div>
-      <div class="tcard reveal"><div class="ph">&#128302;</div><div class="body"><h3>Nadi Pareeksha</h3><p>Pulse-based assessment and Prakriti analysis to map your unique constitution.</p><span class="tag">Diagnosis</span></div></div>
+      <a href="#book" class="tile big rv"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1100&auto=format&fit=crop" alt="Panchakarma therapy"><div class="ov"></div><span class="tagchip">Detox &amp; rejuvenation</span><div class="lbl"><h3>Panchakarma</h3><div class="sub">A staged detox programme to clear toxins and reset the system.</div></div></a>
+      <a href="#book" class="tile sm rv"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop" alt="Shirodhara"><div class="ov"></div><div class="lbl"><h3>Shirodhara</h3><div class="sub">Warm oil flow to calm the mind</div></div></a>
+      <a href="#book" class="tile sm rv"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop" alt="Kati Vasti"><div class="ov"></div><div class="lbl"><h3>Kati &amp; Janu Vasti</h3><div class="sub">Targeted joint pain relief</div></div></a>
+      <a href="#book" class="tile sm rv"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800&auto=format&fit=crop" alt="Njavarakizhi"><div class="ov"></div><div class="lbl"><h3>Njavarakizhi</h3><div class="sub">Strengthening poultice massage</div></div></a>
+      <a href="#book" class="tile sm rv"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1512675828443-4f454c42253a?q=80&w=800&auto=format&fit=crop" alt="Herbal medicine"><div class="ov"></div><div class="lbl"><h3>Udwarthana</h3><div class="sub">Herbal powder slimming massage</div></div></a>
+      <a href="#book" class="tile wide rv"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1100&auto=format&fit=crop" alt="Nadi Pareeksha pulse diagnosis"><div class="ov"></div><span class="tagchip">Diagnosis</span><div class="lbl"><h3>Nadi Pareeksha &amp; Prakriti analysis</h3><div class="sub">Pulse reading to map your unique constitution</div></div></a>
     </div>
   </div>
 </section>
 
-<!-- APPROACH -->
+<!-- Approach -->
 <section class="approach">
-  <div class="wrap center">
-    <span class="eyebrow">How it works</span>
-    <h2>Your path back to balance, in three steps</h2>
-    <div class="steps">
-      <div class="step reveal"><div class="num">01</div><h3>Consult &amp; assess</h3><p>Your doctor reviews your history, lifestyle and concerns, then reads your dosha and pulse to find the root imbalance.</p></div>
-      <div class="step reveal"><div class="num">02</div><h3>Personalised plan</h3><p>You receive a tailored plan: the right therapies, herbal medicines, diet and routine for your body, not a template.</p></div>
-      <div class="step reveal"><div class="num">03</div><h3>Treat &amp; restore</h3><p>You begin guided treatment at the clinic, with check-ins so your plan adapts as you progress.</p></div>
+  <div class="wrap">
+    <div class="ap-grid">
+      <div>
+        <div class="kicker">How it works</div>
+        <h2>Your path back to <em>balance,</em> in three steps.</h2>
+        <p class="lead" style="margin-top:16px">No two plans are the same. Your doctor finds the root imbalance first, then builds the right treatment around your body, not a template.</p>
+        <div class="steps">
+          <div class="step rv"><div class="n">1</div><div><h3>Consult &amp; assess</h3><p>Your doctor reviews your history, lifestyle and concerns, then reads your dosha and pulse to find the root imbalance.</p></div></div>
+          <div class="step rv"><div class="n">2</div><div><h3>Personalised plan</h3><p>You receive a tailored plan: the right therapies, herbal medicines, diet and routine for you.</p></div></div>
+          <div class="step rv"><div class="n">3</div><div><h3>Treat &amp; restore</h3><p>You begin guided treatment at the clinic, with check-ins so your plan adapts as you progress.</p></div></div>
+        </div>
+      </div>
+      <div class="ap-panel rv">
+        <div class="top">
+          <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=800&auto=format&fit=crop" alt="Ayurmana clinic">
+          <div class="ov"></div>
+          <div class="badge"><span class="dotpulse"></span> Open today</div>
+          <div class="nm"><div class="city" id="panelCity">Dubai</div><div class="prov" id="panelProv">Dubai Silicon Oasis</div></div>
+        </div>
+        <div class="body">
+          <div class="ap-row"><span class="k">Hours today</span><span class="v" style="color:var(--good)">9am to 9pm</span></div>
+          <div class="ap-row"><span class="k">First visit</span><span class="v">Consultation &amp; assessment</span></div>
+          <div class="ap-row"><span class="k">Booking</span><span class="v">Phone, WhatsApp or form</span></div>
+          <div class="ap-row"><span class="k">Insurance</span><span class="v">Reimbursement support</span></div>
+        </div>
+        <div class="ap-foot">
+          <a href="#book" class="btn">Book this clinic</a>
+          <button class="btn btn-ghost" id="panelSwitch" style="flex:none;padding:13px 16px">Change</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PACKAGES -->
+<!-- Packages -->
 <section id="packages">
-  <div class="wrap center">
-    <div class="shead">
-      <span class="eyebrow">Care packages</span>
-      <h2>Programmes built around real concerns</h2>
-      <p class="lede">Structured packages that combine the right therapies for a specific goal. Your doctor confirms the right fit at your consultation.</p>
+  <div class="wrap">
+    <div class="shead cen">
+      <div class="kicker cen">Care packages</div>
+      <h2>Programmes built around <em>real concerns.</em></h2>
+      <p class="lead" style="margin:16px auto 0">Structured programmes that combine the right therapies for a specific goal. Your doctor confirms the right fit at your consultation.</p>
     </div>
     <div class="pkg-grid">
-      <div class="pkg reveal"><h3>Postnatal Care</h3><p>Recovery and rejuvenation for new mothers.</p><ul><li>Strength and tissue recovery</li><li>Rest and rebalancing therapies</li><li>Diet and routine guidance</li></ul></div>
-      <div class="pkg reveal"><h3>Neck &amp; Spine Care</h3><p>For desk strain, stiffness and back pain.</p><ul><li>Targeted Vasti therapies</li><li>Mobility and posture support</li><li>Pain-relief focused plan</li></ul></div>
-      <div class="pkg reveal"><h3>Skin &amp; Beauty Care</h3><p>For skin health and natural glow.</p><ul><li>Internal and external care</li><li>Herbal beauty therapies</li><li>Lifestyle and diet advice</li></ul></div>
-      <div class="pkg reveal"><h3>Eye Care</h3><p>Support for tired, strained eyes.</p><ul><li>Soothing eye therapies</li><li>Screen-strain relief</li><li>Personalised routine</li></ul></div>
-      <div class="pkg reveal"><h3>Hair Care</h3><p>For hair fall and scalp health.</p><ul><li>Scalp and root nourishment</li><li>Herbal hair therapies</li><li>Diet and stress guidance</li></ul></div>
-      <div class="pkg reveal"><h3>De-stress &amp; Detox</h3><p>Reset body and mind.</p><ul><li>Shirodhara and gentle massage</li><li>Panchakarma cleansing</li><li>Yoga and breathwork</li></ul></div>
+      <div class="pkg rv"><div class="ic-box"><svg class="ic"><use href="#i-lotus"></use></svg></div><h3>Postnatal Care</h3><p>Recovery and rejuvenation for new mothers.</p><ul><li><svg class="ic"><use href="#i-check"></use></svg> Strength and tissue recovery</li><li><svg class="ic"><use href="#i-check"></use></svg> Rest and rebalancing therapies</li><li><svg class="ic"><use href="#i-check"></use></svg> Diet and routine guidance</li></ul></div>
+      <div class="pkg rv"><div class="ic-box"><svg class="ic"><use href="#i-spark"></use></svg></div><h3>Neck &amp; Spine Care</h3><p>For desk strain, stiffness and back pain.</p><ul><li><svg class="ic"><use href="#i-check"></use></svg> Targeted Vasti therapies</li><li><svg class="ic"><use href="#i-check"></use></svg> Mobility and posture support</li><li><svg class="ic"><use href="#i-check"></use></svg> Pain-relief focused plan</li></ul></div>
+      <div class="pkg rv"><div class="ic-box"><svg class="ic"><use href="#i-drop"></use></svg></div><h3>Skin &amp; Beauty Care</h3><p>For skin health and a natural glow.</p><ul><li><svg class="ic"><use href="#i-check"></use></svg> Internal and external care</li><li><svg class="ic"><use href="#i-check"></use></svg> Herbal beauty therapies</li><li><svg class="ic"><use href="#i-check"></use></svg> Lifestyle and diet advice</li></ul></div>
+      <div class="pkg rv"><div class="ic-box"><svg class="ic"><use href="#i-star"></use></svg></div><h3>Eye Care</h3><p>Support for tired, strained eyes.</p><ul><li><svg class="ic"><use href="#i-check"></use></svg> Soothing eye therapies</li><li><svg class="ic"><use href="#i-check"></use></svg> Screen-strain relief</li><li><svg class="ic"><use href="#i-check"></use></svg> Personalised routine</li></ul></div>
+      <div class="pkg rv"><div class="ic-box"><svg class="ic"><use href="#i-leaf"></use></svg></div><h3>Hair Care</h3><p>For hair fall and scalp health.</p><ul><li><svg class="ic"><use href="#i-check"></use></svg> Scalp and root nourishment</li><li><svg class="ic"><use href="#i-check"></use></svg> Herbal hair therapies</li><li><svg class="ic"><use href="#i-check"></use></svg> Diet and stress guidance</li></ul></div>
+      <div class="pkg rv"><div class="ic-box"><svg class="ic"><use href="#i-bowl"></use></svg></div><h3>De-stress &amp; Detox</h3><p>Reset body and mind.</p><ul><li><svg class="ic"><use href="#i-check"></use></svg> Shirodhara and gentle massage</li><li><svg class="ic"><use href="#i-check"></use></svg> Panchakarma cleansing</li><li><svg class="ic"><use href="#i-check"></use></svg> Yoga and breathwork</li></ul></div>
     </div>
   </div>
 </section>
 
-<!-- DOCTORS -->
+<!-- Doctors -->
 <section class="docs" id="doctors">
-  <div class="wrap center">
-    <span class="eyebrow">Meet the team</span>
-    <h2>Real Ayurvedic doctors, real training</h2>
-    <p class="lede">Our practitioners are BAMS-qualified from established Ayurveda colleges in India, with licensed doctors across our UAE clinics.</p>
-    <div class="doc-grid">
-      <div class="doc reveal"><div class="av">S</div><h3>Dr. Sumy Ashok Kumar</h3><div class="cred">BAMS &middot; 9+ years &middot; Dubai</div><p>Digestive and joint conditions, skin, diabetes, lifestyle disorders, antenatal and postnatal care, Panchakarma.</p></div>
-      <div class="doc reveal"><div class="av">M</div><h3>Dr. Merlin Antony</h3><div class="cred">BAMS, PG Marma Chikitsa &middot; 10 years</div><p>Orthopedic and gastrointestinal disorders, gynecology, varicose veins, psoriasis and eczema.</p></div>
-      <div class="doc reveal"><div class="av">M</div><h3>Dr. Muhsinath</h3><div class="cred">BAMS &middot; DHA-licensed &middot; 7+ years</div><p>Eye and ENT disorders, gynecology, PCOS, musculoskeletal and skin conditions, lifestyle diseases.</p></div>
-      <div class="doc reveal"><div class="av">S</div><h3>Dr. Sreenath</h3><div class="cred">BAMS, PG Kayachikitsa &middot; 13 years</div><p>Musculoskeletal conditions, skin disorders, migraine, sinusitis and obesity management.</p></div>
-      <div class="doc reveal"><div class="av">A</div><h3>Dr. Anjali Jishnu</h3><div class="cred">BAMS &middot; 6 years &middot; Ajman</div><p>Panchakarma therapy, skin and joint disorders, gastrointestinal and ENT disorders, PCOS, gynecology.</p></div>
-      <div class="doc reveal"><div class="av">S</div><h3>Dr. Shruthi O T</h3><div class="cred">BAMS &middot; DHA-licensed &middot; 13+ years</div><p>Musculoskeletal and joint disorders, gynecology, lifestyle disease management, skin, prenatal and postnatal care.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CONDITIONS -->
-<section style="background:var(--cream)">
-  <div class="wrap center">
-    <span class="eyebrow">Areas of focus</span>
-    <h2>Concerns people come to us with</h2>
-    <p class="lede">If something here sounds like you, a consultation is the right first step to understand the cause.</p>
-    <div class="cond-list">
-      <span>Back &amp; neck pain</span><span>Arthritis &amp; joints</span><span>Stress &amp; anxiety</span>
-      <span>Sleep issues</span><span>Digestive problems</span><span>Skin conditions</span>
-      <span>Hair fall</span><span>PCOS</span><span>Weight management</span>
-      <span>Migraine &amp; sinusitis</span><span>Postnatal recovery</span><span>Pre-conception care</span>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section class="reviews">
-  <div class="wrap center">
-    <span class="eyebrow">Patient experiences</span>
-    <h2>What care here feels like</h2>
-    <div class="rev-grid">
-      <div class="rev reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"The doctor actually listened and explained the cause of my back pain. The Kati Vasti sessions gave me relief nothing else had."</p><div class="who">Verified patient, Dubai</div></div>
-      <div class="rev reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"After my Panchakarma programme I felt lighter and slept better than I had in years. Genuine, professional care."</p><div class="who">Verified patient, Sharjah</div></div>
-      <div class="rev reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Calm, clean clinic and a doctor who took time with my postnatal recovery. I felt looked after the whole way through."</p><div class="who">Verified patient, Ajman</div></div>
-    </div>
-    <p class="rev-note">Placeholder layout for real patient reviews. Live version embeds the clinic's verified Google reviews so visitors see current, named ratings.</p>
-  </div>
-</section>
-
-<!-- LEAD MAGNET / BOOK -->
-<section id="book">
   <div class="wrap">
-    <div class="magnet">
-      <span class="eyebrow" style="color:var(--gold-light)">Start here</span>
-      <h2>Not sure which treatment is right for you?</h2>
-      <p>Tell us your main concern and the best clinic for you. Our team will help you book the right consultation, often the same week.</p>
-      <form class="mform" onsubmit="return formMsg(event)">
-        <input type="text" placeholder="Your name" required />
-        <input type="tel" placeholder="WhatsApp number" required />
-        <button class="btn" type="submit">Request a Callback</button>
-      </form>
-      <div class="mform-note" id="mnote">No obligation. Your details stay private and are used only to arrange your consultation.</div>
-      <div style="margin-top:22px">
-        <a href="https://wa.me/971569335500" class="btn btn-ghost" style="border-color:rgba(255,255,255,.6)">Or message us directly on WhatsApp</a>
+    <div class="shead cen">
+      <div class="kicker cen">Meet the team</div>
+      <h2>Real Ayurvedic doctors, <em>real training.</em></h2>
+      <p class="lead" style="margin:16px auto 0">Our practitioners are BAMS-qualified from established Ayurveda colleges in India, with licensed doctors across our UAE clinics.</p>
+    </div>
+    <div class="doc-grid">
+      <div class="doc rv"><div class="av">SK</div><h3>Dr. Sumy Ashok Kumar</h3><div class="cred"><svg class="ic"><use href="#i-leaf"></use></svg> BAMS &middot; 9+ years &middot; Dubai</div><p>Digestive and joint conditions, skin, diabetes, lifestyle disorders, antenatal and postnatal care, Panchakarma.</p></div>
+      <div class="doc rv"><div class="av">MA</div><h3>Dr. Merlin Antony</h3><div class="cred"><svg class="ic"><use href="#i-leaf"></use></svg> BAMS, PG Marma Chikitsa &middot; 10 years</div><p>Orthopedic and gastrointestinal disorders, gynecology, varicose veins, psoriasis and eczema.</p></div>
+      <div class="doc rv"><div class="av">Mu</div><h3>Dr. Muhsinath</h3><div class="cred"><svg class="ic"><use href="#i-shield"></use></svg> BAMS &middot; DHA-licensed &middot; 7+ years</div><p>Eye and ENT disorders, gynecology, PCOS, musculoskeletal and skin conditions, lifestyle diseases.</p></div>
+      <div class="doc rv"><div class="av">Sr</div><h3>Dr. Sreenath</h3><div class="cred"><svg class="ic"><use href="#i-leaf"></use></svg> BAMS, PG Kayachikitsa &middot; 13 years</div><p>Musculoskeletal conditions, skin disorders, migraine, sinusitis and obesity management.</p></div>
+      <div class="doc rv"><div class="av">AJ</div><h3>Dr. Anjali Jishnu</h3><div class="cred"><svg class="ic"><use href="#i-leaf"></use></svg> BAMS &middot; 6 years &middot; Ajman</div><p>Panchakarma therapy, skin and joint disorders, gastrointestinal and ENT disorders, PCOS, gynecology.</p></div>
+      <div class="doc rv"><div class="av">SO</div><h3>Dr. Shruthi O T</h3><div class="cred"><svg class="ic"><use href="#i-shield"></use></svg> BAMS &middot; DHA-licensed &middot; 13+ years</div><p>Musculoskeletal and joint disorders, gynecology, lifestyle disease management, skin, prenatal and postnatal care.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Conditions -->
+<section style="background:var(--paper)">
+  <div class="wrap">
+    <div class="shead cen">
+      <div class="kicker cen">Areas of focus</div>
+      <h2>Concerns people come to us <em>with.</em></h2>
+      <p class="lead" style="margin:16px auto 0">If something here sounds like you, a consultation is the right first step to understand the cause.</p>
+    </div>
+    <div class="cond-list">
+      <span><svg class="ic"><use href="#i-check"></use></svg> Back &amp; neck pain</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> Arthritis &amp; joints</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> Stress &amp; anxiety</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> Sleep issues</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> Digestive problems</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> Skin conditions</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> Hair fall</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> PCOS</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> Weight management</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> Migraine &amp; sinusitis</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> Postnatal recovery</span>
+      <span><svg class="ic"><use href="#i-check"></use></svg> Pre-conception care</span>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="rev-top">
+      <div class="shead"><div class="kicker"><svg class="ic ic-fill"><use href="#i-star"></use></svg> &nbsp;Loved across the UAE</div><h2>What care here <em>feels like.</em></h2></div>
+      <div class="rev-score"><span class="num">5.0</span><div><div class="stars"><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg></div><div style="font-size:.85rem;color:var(--muted)">Patients across Dubai, Sharjah &amp; Ajman</div></div></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card rv"><div class="stars"><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg></div><p>The doctor actually listened and explained the cause of my back pain. The Kati Vasti sessions gave me relief nothing else had.</p><div class="who"><div class="av">R</div><div><b>Verified patient</b><span>Dubai</span></div></div></div>
+      <div class="rev-card rv"><div class="stars"><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg></div><p>After my Panchakarma programme I felt lighter and slept better than I had in years. Genuine, professional care.</p><div class="who"><div class="av">A</div><div><b>Verified patient</b><span>Sharjah</span></div></div></div>
+      <div class="rev-card rv"><div class="stars"><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg><svg class="ic"><use href="#i-star"></use></svg></div><p>Calm, clean clinic and a doctor who took time with my postnatal recovery. I felt looked after the whole way through.</p><div class="who"><div class="av">N</div><div><b>Verified patient</b><span>Ajman</span></div></div></div>
+    </div>
+    <p class="note-soft">Sample reviews shown to illustrate the layout. Your verified Google reviews connect on launch.</p>
+  </div>
+</section>
+
+<!-- Philosophy -->
+<section class="story">
+  <div class="wrap">
+    <div class="story-figure rv">
+      <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1512675828443-4f454c42253a?q=80&w=900&auto=format&fit=crop" alt="Ayurvedic herbs and medicine">
+      <div class="est"><div class="yr">5000</div><div class="sub">Years of tradition</div></div>
+    </div>
+    <div>
+      <div class="kicker">The Ayurmana approach</div>
+      <h2>Old wisdom, <em>practised properly.</em></h2>
+      <p>Ayurveda is one of the world's oldest systems of medicine. Done right, it does not chase symptoms. It looks for the imbalance underneath and corrects it with treatment, diet, herbs and routine that suit your body.</p>
+      <blockquote>We often feel a quiet unease or fleeting symptoms that standard reports do not explain. That is exactly where authentic Ayurveda helps.</blockquote>
+      <p style="color:var(--muted)">At Ayurmana, every patient sees a qualified doctor first. Treatments are genuine, medicines are authentic, and the plan is built for you, across our clinics in Dubai, Sharjah and Ajman.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Book -->
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Start here</div>
+      <h2>Not sure which treatment is <em>right for you?</em></h2>
+      <p class="lead" style="margin-top:16px">Tell us your main concern and your nearest clinic. Our team will help you book the right consultation, often the same week.</p>
+      <ul>
+        <li><svg class="ic"><use href="#i-check"></use></svg> Seen by a qualified, DHA-licensed doctor</li>
+        <li><svg class="ic"><use href="#i-check"></use></svg> A clear, personalised plan, not a template</li>
+        <li><svg class="ic"><use href="#i-check"></use></svg> Insurance reimbursement support where it applies</li>
+        <li><svg class="ic"><use href="#i-check"></use></svg> No obligation, your details stay private</li>
+      </ul>
+      <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+        <a href="https://wa.me/971569335500" class="btn btn-wa"><svg class="ic"><use href="#i-chat"></use></svg> WhatsApp us</a>
+        <a href="tel:8002987" class="btn btn-ghost"><svg class="ic"><use href="#i-phone"></use></svg> 800-AYUR</a>
       </div>
     </div>
+    <div class="formcard rv">
+      <h3>Request a callback</h3>
+      <div class="fsub">We will call you back to arrange your consultation.</div>
+      <form id="bookForm" onsubmit="return submitBook(event)">
+        <div class="field"><label>Your name</label><input type="text" required placeholder="Full name"></div>
+        <div class="field-row">
+          <div class="field"><label>WhatsApp / phone</label><input type="tel" required placeholder="+971 ..."></div>
+          <div class="field"><label>Nearest clinic</label><select id="formClinic"><option>Dubai</option><option>Sharjah</option><option>Ajman</option></select></div>
+        </div>
+        <div class="field"><label>Main concern</label><select><option>General consultation</option><option>Back, neck or joint pain</option><option>Stress, sleep or anxiety</option><option>Digestion or weight</option><option>Skin, hair or PCOS</option><option>Postnatal or pre-conception</option><option>Panchakarma / detox</option></select></div>
+        <button class="btn" type="submit" style="width:100%;justify-content:center">Request my callback</button>
+        <div class="form-note">By submitting you agree to be contacted about your consultation. Demo form, no data is stored.</div>
+        <div class="form-ok" id="formOk"><svg class="ic" style="color:var(--good)"><use href="#i-check"></use></svg> Thank you. This is a demo. On the live site this reaches the clinic team and your chosen clinic calls you back.</div>
+      </form>
+    </div>
   </div>
 </section>
 
-<!-- LOCATIONS -->
-<section id="locations" style="background:var(--sand)">
-  <div class="wrap center">
-    <span class="eyebrow">Find us</span>
-    <h2>Three clinics across the UAE</h2>
+<!-- Locations -->
+<section class="loc" id="locations">
+  <div class="wrap">
+    <div class="shead cen">
+      <div class="kicker cen">Find us</div>
+      <h2>Three clinics across <em>the UAE.</em></h2>
+      <p class="lead" style="margin:16px auto 0">Choose whichever is closest, or message us and we will point you to the right doctor for your concern.</p>
+    </div>
+    <div class="loc-tabs">
+      <button class="loc-tab on" data-loc="dubai">Dubai</button>
+      <button class="loc-tab" data-loc="sharjah">Sharjah</button>
+      <button class="loc-tab" data-loc="ajman">Ajman</button>
+    </div>
     <div class="loc-grid">
-      <div class="loc reveal">
+      <div class="lcard on" data-loc="dubai">
         <span class="city">Dubai</span>
         <h3>Dubai Silicon Oasis</h3>
-        <p>Office 407 &amp; 408, Lynx Business Tower, Dubai Silicon Oasis (DSO), Dubai.</p>
-        <a class="row" href="tel:+97143300788"><span class="ic">&#9742;</span>+971 4 3300 788</a>
-        <a class="row" href="https://wa.me/971569335500"><span class="ic">&#128172;</span>WhatsApp +971 56 933 5500</a>
-        <a class="row" href="mailto:info@ayurmana-uae.com"><span class="ic">&#9993;</span>info@ayurmana-uae.com</a>
+        <div class="addr">Office 407 &amp; 408, Lynx Business Tower, Dubai Silicon Oasis (DSO), Dubai.</div>
+        <a class="row" href="tel:+97143300788"><svg class="ic"><use href="#i-phone"></use></svg> +971 4 3300 788</a>
+        <a class="row" href="https://wa.me/971569335500"><svg class="ic"><use href="#i-chat"></use></svg> WhatsApp +971 56 933 5500</a>
+        <a class="row" href="mailto:info@ayurmana-uae.com"><svg class="ic"><use href="#i-cal"></use></svg> info@ayurmana-uae.com</a>
       </div>
-      <div class="loc reveal">
+      <div class="lcard" data-loc="sharjah">
         <span class="city">Sharjah</span>
         <h3>New Muweileh</h3>
-        <p>304, Al Taneiji Building, New Muweileh, near Super Bonanza Hypermarket, Sharjah.</p>
-        <a class="row" href="tel:+97165505500"><span class="ic">&#9742;</span>+971 6 5505 500</a>
-        <a class="row" href="https://wa.me/971555247661"><span class="ic">&#128172;</span>WhatsApp +971 55 524 7661</a>
-        <a class="row" href="mailto:shj@ayurmana-uae.com"><span class="ic">&#9993;</span>shj@ayurmana-uae.com</a>
+        <div class="addr">304, Al Taneiji Building, New Muweileh, near Super Bonanza Hypermarket, Sharjah.</div>
+        <a class="row" href="tel:+97165505500"><svg class="ic"><use href="#i-phone"></use></svg> +971 6 5505 500</a>
+        <a class="row" href="https://wa.me/971555247661"><svg class="ic"><use href="#i-chat"></use></svg> WhatsApp +971 55 524 7661</a>
+        <a class="row" href="mailto:shj@ayurmana-uae.com"><svg class="ic"><use href="#i-cal"></use></svg> shj@ayurmana-uae.com</a>
       </div>
-      <div class="loc reveal">
+      <div class="lcard" data-loc="ajman">
         <span class="city">Ajman</span>
         <h3>Al Liwara</h3>
-        <p>Suite 13, Office Floor, Al Liwara 1 Building, near Al Bustan Bus Station, Ajman.</p>
-        <a class="row" href="tel:+97167475001"><span class="ic">&#9742;</span>+971 6 747 5001</a>
-        <a class="row" href="https://wa.me/971586904340"><span class="ic">&#128172;</span>WhatsApp +971 58 690 4340</a>
-        <a class="row" href="mailto:ajm@ayurmana-uae.com"><span class="ic">&#9993;</span>ajm@ayurmana-uae.com</a>
+        <div class="addr">Suite 13, Office Floor, Al Liwara 1 Building, near Al Bustan Bus Station, Ajman.</div>
+        <a class="row" href="tel:+97167475001"><svg class="ic"><use href="#i-phone"></use></svg> +971 6 747 5001</a>
+        <a class="row" href="https://wa.me/971586904340"><svg class="ic"><use href="#i-chat"></use></svg> WhatsApp +971 58 690 4340</a>
+        <a class="row" href="mailto:ajm@ayurmana-uae.com"><svg class="ic"><use href="#i-cal"></use></svg> ajm@ayurmana-uae.com</a>
       </div>
     </div>
-    <p style="margin-top:30px;font-size:.95rem">Toll-free across the UAE: <strong style="color:var(--green-dark)">800-AYUR (800-2987)</strong> &middot; Open daily 9am to 9pm</p>
+    <p style="text-align:center;margin-top:28px;color:#bcd2c2">Toll-free across the UAE: <strong style="color:#fff">800-AYUR (800-2987)</strong> &middot; Open daily 9am to 9pm</p>
   </div>
 </section>
 
 <!-- FAQ -->
-<section id="faq">
-  <div class="wrap center">
-    <span class="eyebrow">Good to know</span>
-    <h2>Questions, answered</h2>
-    <div class="faq" style="text-align:left">
-      <div class="qa"><button>What happens at my first consultation? <span class="pm">+</span></button><div class="ans"><p>Your doctor reviews your health history, lifestyle and main concerns, then assesses your constitution (dosha) and pulse. You leave with a clear, personalised plan rather than a one-size-fits-all prescription.</p></div></div>
-      <div class="qa"><button>Is Ayurveda safe alongside my regular medicine? <span class="pm">+</span></button><div class="ans"><p>Our doctors take your full history into account and will discuss how Ayurvedic care fits with any treatment you are already receiving. Always tell your doctor about current medications. Ayurveda supports wellbeing and is not a replacement for emergency or specialist medical care.</p></div></div>
-      <div class="qa"><button>Do you accept insurance? <span class="pm">+</span></button><div class="ans"><p>We offer insurance reimbursement support and accept insurance cards for claims, subject to terms and your provider's coverage. Our team will guide you through what applies before you start.</p></div></div>
-      <div class="qa"><button>How long before I notice a difference? <span class="pm">+</span></button><div class="ans"><p>It depends on your concern, how long it has been present and the plan you follow. Some people feel relief quickly, others need a full programme. Results vary from person to person, and your doctor will set honest expectations.</p></div></div>
-      <div class="qa"><button>Which clinic should I visit? <span class="pm">+</span></button><div class="ans"><p>We have clinics in Dubai (Silicon Oasis), Sharjah (New Muweileh) and Ajman (Al Liwara). Choose whichever is closest, or message us and we will point you to the right doctor for your concern.</p></div></div>
+<section id="faq" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="shead cen">
+      <div class="kicker cen">Good to know</div>
+      <h2>Questions, <em>answered.</em></h2>
+    </div>
+    <div class="faq">
+      <div class="faq-item"><button class="faq-q">What happens at my first consultation? <svg class="ic"><use href="#i-plus"></use></svg></button><div class="faq-a"><p>Your doctor reviews your health history, lifestyle and main concerns, then assesses your constitution (dosha) and pulse. You leave with a clear, personalised plan rather than a one-size-fits-all prescription.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Is Ayurveda safe alongside my regular medicine? <svg class="ic"><use href="#i-plus"></use></svg></button><div class="faq-a"><p>Our doctors take your full history into account and will discuss how Ayurvedic care fits with any treatment you are already receiving. Always tell your doctor about current medications. Ayurveda supports wellbeing and is not a replacement for emergency or specialist medical care.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Do you accept insurance? <svg class="ic"><use href="#i-plus"></use></svg></button><div class="faq-a"><p>We offer insurance reimbursement support and accept insurance cards for claims, subject to terms and your provider's coverage. Our team will guide you through what applies before you start.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How long before I notice a difference? <svg class="ic"><use href="#i-plus"></use></svg></button><div class="faq-a"><p>It depends on your concern, how long it has been present and the plan you follow. Some people feel relief quickly, others need a full programme. Results vary from person to person, and your doctor will set honest expectations.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Which clinic should I visit? <svg class="ic"><use href="#i-plus"></use></svg></button><div class="faq-a"><p>We have clinics in Dubai (Silicon Oasis), Sharjah (New Muweileh) and Ajman (Al Liwara). Choose whichever is closest, or message us and we will point you to the right doctor for your concern.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
+<!-- Final -->
 <section class="final">
+  <div class="final-img"></div>
+  <div class="final-scrim"></div>
   <div class="wrap">
-    <span class="eyebrow" style="color:var(--gold-light)">Your next step</span>
-    <h2>Real Ayurveda starts with one conversation</h2>
+    <div class="kicker cen" style="color:var(--gold)">Your next step</div>
+    <h2>Real Ayurveda starts with <em>one conversation.</em></h2>
     <p>Book a consultation with a licensed Ayurvedic doctor and find out what is actually behind how you feel.</p>
-    <a href="#book" class="btn">Book Your Consultation</a>
+    <a href="#book" class="btn btn-on-dark">Book your consultation</a>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- Newsletter -->
+<section class="newsletter">
+  <div class="wrap">
+    <div class="nl-inner">
+      <div>
+        <h3>Simple wellness tips, now and then</h3>
+        <p>Seasonal Ayurvedic guidance and clinic updates. No spam, unsubscribe anytime.</p>
+      </div>
+      <form class="nl-form" onsubmit="return false">
+        <input type="email" placeholder="Your email address" aria-label="Email">
+        <button class="btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer>
   <div class="wrap">
-    <div class="f-grid">
-      <div>
-        <div class="f-brand">Ayurmana</div>
-        <p style="color:rgba(255,255,255,.6)">Ayurveda &amp; Panchakarma FZC. Authentic Kerala Ayurveda across Dubai, Sharjah and Ajman, guided by qualified doctors.</p>
-        <p style="margin-top:10px"><strong style="color:#fff">Toll-free:</strong> 800-AYUR (2987)</p>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="fb"><span class="mk"><svg class="ic"><use href="#i-lotus"></use></svg></span><span class="nm">Ayurmana</span></div>
+        <p style="color:#9fb6a6;max-width:34ch">Ayurveda &amp; Panchakarma FZC. Authentic Kerala Ayurveda across Dubai, Sharjah and Ajman, guided by qualified doctors.</p>
+        <p style="margin-top:12px"><a href="tel:8002987" style="display:inline;color:#fff;font-weight:600"><svg class="ic"><use href="#i-phone"></use></svg> Toll-free 800-AYUR (2987)</a></p>
       </div>
-      <div>
-        <h4>Explore</h4>
-        <a href="#problem">Why Ayurveda</a>
-        <a href="#treatments">Treatments</a>
-        <a href="#packages">Packages</a>
-        <a href="#doctors">Our Doctors</a>
-        <a href="#faq">FAQ</a>
-      </div>
-      <div>
-        <h4>Clinics</h4>
-        <a href="tel:+97143300788">Dubai &middot; +971 4 3300 788</a>
-        <a href="tel:+97165505500">Sharjah &middot; +971 6 5505 500</a>
-        <a href="tel:+97167475001">Ajman &middot; +971 6 747 5001</a>
-        <a href="mailto:info@ayurmana-uae.com">info@ayurmana-uae.com</a>
-      </div>
-      <div>
-        <h4>Connect</h4>
-        <a href="https://www.instagram.com/ayurmanaayurvedauae/">Instagram</a>
-        <a href="https://www.facebook.com/ayurmanaayurvedacenter/">Facebook</a>
-        <a href="https://www.tiktok.com/@ayurmanaayurvedauae">TikTok</a>
-        <a href="https://wa.me/971569335500">WhatsApp</a>
-      </div>
+      <div><h4>Explore</h4><a href="#problem">Why Ayurveda</a><a href="#treatments">Treatments</a><a href="#packages">Packages</a><a href="#doctors">Our Doctors</a><a href="#faq">FAQ</a></div>
+      <div><h4>Clinics</h4><a href="tel:+97143300788">Dubai &middot; +971 4 3300 788</a><a href="tel:+97165505500">Sharjah &middot; +971 6 5505 500</a><a href="tel:+97167475001">Ajman &middot; +971 6 747 5001</a><a href="mailto:info@ayurmana-uae.com">info@ayurmana-uae.com</a></div>
+      <div><h4>Connect</h4><a href="https://www.instagram.com/ayurmanaayurvedauae/"><svg class="ic"><use href="#i-ig"></use></svg> Instagram</a><a href="https://www.facebook.com/ayurmanaayurvedacenter/"><svg class="ic"><use href="#i-fb"></use></svg> Facebook</a><a href="https://www.tiktok.com/@ayurmanaayurvedauae"><svg class="ic"><use href="#i-tiktok"></use></svg> TikTok</a><a href="https://wa.me/971569335500"><svg class="ic"><use href="#i-chat"></use></svg> WhatsApp</a></div>
     </div>
   </div>
   <div class="disclaimer">
     The information on this page is for general education and does not replace professional medical advice, diagnosis or treatment. Ayurvedic therapies are provided after individual consultation and outcomes vary from person to person. For medical emergencies, contact your local emergency services. Always consult a qualified doctor about your specific condition and any medication you are taking.
   </div>
   <div class="wrap">
-    <div class="f-bottom">
-      <span>&copy; 2026 Ayurmana Ayurveda &amp; Panchakarma FZC. All rights reserved.</span>
-      <span>Dubai &middot; Sharjah &middot; Ajman</span>
+    <div class="foot-bottom">
+      <span><svg class="ic leaf"><use href="#i-leaf"></use></svg> &nbsp;Authentic Ayurveda in the UAE</span>
+      <span>&copy; 2026 Ayurmana Ayurveda &amp; Panchakarma FZC</span>
     </div>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/971569335500" aria-label="WhatsApp">&#128172;</a>
+<a class="wa" href="https://wa.me/971569335500" aria-label="WhatsApp"><svg class="ic"><use href="#i-chat"></use></svg></a>
+
+<!-- Clinic modal -->
+<div class="modal" id="clinicModal">
+  <div class="modal-card">
+    <button class="modal-x" id="modalX" aria-label="Close">&times;</button>
+    <h3>Choose your clinic</h3>
+    <div class="sub">Pick your nearest location for the right phone, WhatsApp and team.</div>
+    <div class="ms-list">
+      <button class="ms" data-c="Dubai" data-p="Dubai Silicon Oasis"><span><span class="c">Dubai</span><span class="p" style="display:block">Silicon Oasis, Lynx Business Tower</span></span><svg class="ic"><use href="#i-arrow"></use></svg></button>
+      <button class="ms" data-c="Sharjah" data-p="New Muweileh"><span><span class="c">Sharjah</span><span class="p" style="display:block">New Muweileh, Al Taneiji Building</span></span><svg class="ic"><use href="#i-arrow"></use></svg></button>
+      <button class="ms" data-c="Ajman" data-p="Al Liwara"><span><span class="c">Ajman</span><span class="p" style="display:block">Al Liwara 1 Building</span></span><svg class="ic"><use href="#i-arrow"></use></svg></button>
+    </div>
+  </div>
+</div>
 
 <script>
+(function(){
+  // nav shadow
+  var nav=document.getElementById('nav');
+  addEventListener('scroll',function(){nav.classList.toggle('stuck',scrollY>10)});
   // mobile menu
-  var burger=document.getElementById('burger'),menu=document.getElementById('menu');
-  burger.addEventListener('click',function(){menu.classList.toggle('open')});
-  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open')})});
-
-  // FAQ accordion
-  document.querySelectorAll('.qa button').forEach(function(b){
-    b.addEventListener('click',function(){b.parentElement.classList.toggle('open')});
-  });
-
-  // scroll reveal
-  var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
-  },{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-
-  // demo form
-  function formMsg(e){
-    e.preventDefault();
-    document.getElementById('mnote').innerHTML='Thank you. This is a demo form. On the live site this sends straight to the clinic team and your chosen clinic calls you back.';
-    e.target.reset();
-    return false;
+  var mm=document.getElementById('mobileMenu');
+  document.getElementById('menuBtn').onclick=function(){mm.classList.add('open')};
+  document.getElementById('menuClose').onclick=function(){mm.classList.remove('open')};
+  mm.querySelectorAll('a').forEach(function(a){a.onclick=function(){mm.classList.remove('open')}});
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(function(b){b.onclick=function(){b.parentElement.classList.toggle('open')}});
+  // reveal
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  // clinic selector
+  var modal=document.getElementById('clinicModal');
+  function openM(){modal.classList.add('open')}
+  function closeM(){modal.classList.remove('open')}
+  document.getElementById('clinicBtn').onclick=openM;
+  document.getElementById('panelSwitch').onclick=openM;
+  document.getElementById('modalX').onclick=closeM;
+  modal.onclick=function(e){if(e.target===modal)closeM()};
+  document.querySelectorAll('.ms').forEach(function(b){b.onclick=function(){
+    var c=b.getAttribute('data-c'),p=b.getAttribute('data-p');
+    document.getElementById('clinicBtnCity').textContent=c;
+    document.getElementById('panelCity').textContent=c;
+    document.getElementById('panelProv').textContent=p;
+    document.getElementById('formClinic').value=c;
+    setLoc(c.toLowerCase());
+    closeM();
+  }});
+  // location tabs
+  function setLoc(loc){
+    document.querySelectorAll('.loc-tab').forEach(function(t){t.classList.toggle('on',t.getAttribute('data-loc')===loc)});
+    document.querySelectorAll('.lcard').forEach(function(card){card.classList.toggle('on',card.getAttribute('data-loc')===loc)});
   }
+  document.querySelectorAll('.loc-tab').forEach(function(t){t.onclick=function(){setLoc(t.getAttribute('data-loc'))}});
+  // form
+  window.submitBook=function(e){e.preventDefault();document.getElementById('formOk').style.display='flex';e.target.querySelector('button').style.display='none';return false};
+})();
 </script>
 </body>
 </html>
